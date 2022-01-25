@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.0/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/ad611ff14f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="fasion2.jpg">
+    <title>Fashion website template by sulaiman</title>
+</head>
+
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+          
+
+
+
+
+        }
+
+        nav {
+ background-color: #1A1E25;
+            height: 7vh;
+            width: 100%;
+
+        }
+
+        nav ul li {
+            font-size: 2rem;
+            list-style: none;
+            padding-left: 2rem;
+            margin-top: 2rem;
+           
+        }
+
+        nav ul li a {
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            border-bottom: 2px solid orangered;
+            position: absolute;
+            width: 0%;
+            transition: 0.5s ease;
+            height: 100%;
+            left: 0;
+        }
+
+        nav ul li a:hover:after {
+            width: 100%;
+        }
+
+        a[href^='https://'] {
+            color: orangered;
+
+        }
+
+        .container1 {
+            height: 67vh;
+            position: relative;
+            width: 100%;
+            display: flex;
+            top: 2rem;
+
+        }
+
+        .left1 {
+            width: 31%;
+            height: 50vh;
+            position: relative;
+            left: 22rem;
+
+
+        }
+
+        .left1::before {
+            content: '';
+    background-color: #1A1E25;
+    position: absolute;
+    width: 2rem;
+    height: 62%;
+    top: 7.5rem;
+    border-bottom: 19px solid black;
+    border-top: 19px solid black;
+
+
+        }
+
+        #head1 {
+            font-size: 10rem;
+            transform: translate(4.5rem, 9rem);
+
+        }
+
+        h1
+         {
+
+            transform: translate(4.5rem, 9rem);
+            font-size: 7rem;
+            margin-left: 2rem;
+
+        }
+
+      
+
+        .right1 {
+            width: 42%;
+            position: relative;
+            left: 33rem;
+            height: 50vh;
+
+
+
+
+        }
+
+        .right1 img {
+            height: 70rem;
+            position: relative;
+            width: 60rem;
+            object-fit: cover;
+            top: .2rem;
+            z-index: 1;
+
+        }
+
+        #inside-right {
+            width: 78rem;
+            height: 37rem;
+            background-color: black;
+            border: 1px solid black;
+            position: relative;
+            bottom: 56rem;
+            left: -5rem;
+        }
+
+        .social-icons {
+            display: flex;
+            transform: translate(13rem, 29rem);
+        }
+
+        .social-icons li {
+            margin-left: 3rem;
+            font-size: 4rem;
+            color: black;
+            list-style: none;
+        }
+
+        .social-icons li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .container2 {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            top: 18rem;
+            display: flex;
+
+        }
+
+        .left2 {
+            width: fit-content;
+
+            height: 71rem;
+            border: 5px solid black;
+            position: relative;
+            left: 23rem;
+            top: 7rem;
+
+
+
+
+        }
+
+        .left-2 {
+            border: 1px solid black;
+            position: relative;
+            height: 71rem;
+            width: 60rem;
+            left: -12rem;
+            top: -78rem;
+            background-color: black;
+        }
+
+        .left2 img {
+            height: 70rem;
+            width: 60rem;
+            position: relative;
+            z-index: 1;
+
+
+
+        }
+
+        .right2 {
+            width: 50%;
+            height: 70rem;
+            position: relative;
+            left: 19rem;
+            top: 8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #para2 {
+            margin-left: 15rem;
+            font-size: 2.5rem;
+        }
+
+        #para2::first-letter {
+            color: brown;
+            font-size: larger;
+
+        }
+
+        #read {
+            color: rgb(153, 106, 45);
+            font-size: 2rem;
+            transform: translate(-36rem, 25rem);
+        }
+
+        .container3 {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            top: 22rem;
+            display: flex;
+        }
+
+        .left3 {
+            width: 50%;
+
+            height: 71rem;
+
+            position: relative;
+            left: 20rem;
+            top: 7rem;
+
+
+
+
+        }
+
+        .right3 {
+            width: 50%;
+            height: 70rem;
+            position: relative;
+            left: -10rem;
+            top: -3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h5 {
+            font-size: 4rem;
+            width: 22.2rem;
+            position: relative;
+        }
+        h5::before{
+            content: '';
+        
+            width: 8%;
+            left: -3rem;
+            height: 100%;
+            background-color: deeppink;
+            position: absolute;
+        }
+
+        .left3 img {
+            margin-top: 15rem;
+        }
+
+        .left-3 {
+            height: 19rem;
+            width: 23rem;
+            border: 3px solid palevioletred;
+            position: relative;
+            left: 37rem;
+            bottom: 19rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            font-weight: bolder;
+            font-size: 1.5rem;
+        }
+        .right3 img{
+            width: 99%;
+            height: 68rem;
+        }
+        .container4 {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            top: 18rem;
+            display: flex;
+
+        }
+        .left4{
+         
+            width: 30%;
+           
+
+            height: 71rem;
+
+            position: relative;
+            left: 19rem;
+            top: 7rem;
+        }
+        .left4 img{
+            height: 70rem;
+            width: 71rem;
+            position: relative;
+            filter: grayscale(100%);
+            
+          
+        }
+        .mid4{
+            position: relative;
+            width: 30%;
+            height: 70rem;
+            position: relative;
+            left: 27rem;
+            top: 7rem;
+        }
+        
+        #strong{
+            Border: 6px solid rgb(201, 138, 159);
+    padding: 12rem;
+    /* transform: translate(10rem, 10rem); */
+    position: relative;
+    top: 54rem;
+    left: 10rem;
+    padding-right: 3rem;
+    /* text-align: center; */
+    font-size: 2rem;
+    padding-left: 2rem;
+        }
+        #strong::before{
+            content: '';
+    border: 1px solid black;
+    background-color: #1A1E25;
+    width: 83%;
+    height: 11%;
+    position: absolute;
+    top: -41rem;
+
+        }
+        .right4{
+           
+            width: 20%;
+            height: 72rem;
+            position: relative;
+            left: 28rem;
+            top: 6rem;
+        }
+        #logo{
+            height: 10rem;
+            border-radius: 50%;
+
+        }
+        #right4-para{
+            font-size: 1.5rem;
+            font-weight: bolder;
+            margin-top: 1rem;
+            width: 24rem;
+
+        }
+        
+        #right4-img{
+            height: 36rem;
+    position: relative;
+    top: 10rem;
+    width: 25rem;
+    object-fit: cover;
+        }
+        #right-icon{
+            position: relative;
+            top: 3rem;
+        }
+        
+
+section, footer {
+    background: #1A1E25;
+    position: relative;
+    top: 18rem;
+    color: #868c96;
+}
+
+footer p {
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer img {
+    width: 44px;
+}
+        
+    </style>
+
+</body>
+<div class="navig">
+    <nav id="nav">
+        <ul>
+            <li><a href="https://">Home</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">fashion</a></li>
+            <li><a href="">more</a></li>
+        </ul>
+
+    </nav>
+</div>
+<div class="container1" data-aos="zoom-in">
+    <div class="left1">
+        <!-- <h1 id="head1">We Want to Make you Feel Good to Look Good</h1> -->
+        <h1>We Want to <br>make you <br>feel good <br>to look good</h1>
+        <!-- <h3>Make you</h3>
+        <h4>Feel Good</h4>
+        <h6>to Look Good....</h6> -->
+        <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-github"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+
+    </div>
+    <div class="right1">
+        <img src="model5.jpg" alt="">
+        <div id="inside-right"></div>
+
+
+    </div>
+
+</div>
+<div class="container2"  data-aos="zoom-out">
+    <div class="left2">
+        <img src="fashion2.jpg" alt="">
+        <div class="left-2">
+
+        </div>
+
+    </div>
+    <div class="right2">
+        <h2 style="font-size: 5rem;" id="head2">We are an international fashion brand </h2>
+        <p id="para2">That represents style and quality since 1968. Founded in San Francisco by Susie and Doug Tompkins,
+            works on a basis of creativity and responsibility, fused with a sunny Californian attitude.</p>
+        <a id="read" href="">Read more</a>
+
+    </div>
+</div>
+<div class="container3" data-aos="zoom-out">
+    <div class="left3">
+        <h5>Follow Your Favorite Blog and discover news</h5>
+        <img src="fashion5.png" height="200px" alt="">
+        <div class="left-3">
+            <i style="font-size: 2rem; margin-bottom: 9rem;" class="fas fa-quote-left"></i>
+            <p>Aspiration is to be the best casual fashion brand with an outstanding price-value proposition.</p>
+
+        </div>
+
+    </div>
+    <div class="right3">
+        <img src="fashion1.jpg" alt="">
+
+    </div>
+</div>
+<div class="container4" data-aos="zoom-out">
+    <div class="left4">
+        <img src="model7.jpg" alt="">
+
+    </div>
+    <div class="mid4">
+        <strong id="strong">Feel Good To Look Good</strong>
+
+    </div>
+    <div class="right4">
+        <img id="logo" src="_mr__farooqi__20200109_195428_0-01.png" alt="">
+        <p id="right4-para">"For every garment, pays maximum attention to fabric selection, fitting and perfect quality."<br><br>——SULAIMAN FAROOQI</p>
+        <div id='right-icon'>
+            
+            <i style="font-size: 2.5rem; margin-top: 1rem ; margin-left: 1rem;" class="fa fa-facebook"></i>
+            <i  style="font-size: 2.5rem; margin-top: 1rem;  margin-left: 2rem"class="fa fa-github"></i>
+            <i style="font-size: 2.5rem; margin-top: 1rem; margin-left: 2rem" class="fa fa-instagram"></i>
+              
+        </div>
+            
+        <img id="right4-img" src="model8.jpg" alt="">
+
+ 
+    </div>
+</div>
+<footer>
+    <p>Copyright &copy; 2022   All Rights Reserved.<br>  <a style="color: white; font-size: 2rem; margin-top: 1rem;" href="mailto:xyz.com">Email us</a></p>
+  
+</footer>
+
+
+<script>
+    AOS.init({
+  duration: 1200,
+})
+</script>
+
+</html>
